@@ -1,0 +1,610 @@
+/*------标签样式再设置------*/
+body, dl, dd, ul, ol, h1, h2, h3, h4, h5, h6, p, form {
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+}
+
+em, i, b {
+    font-style: normal;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #363636;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    border: 0;
+    border-radius: 2px 2px 2px 2px;
+}
+
+button, input, select, textarea {
+    font-size: 100%;
+    outline: none;
+}
+
+textarea {
+    resize: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+td, th, ul, ol {
+    padding: 0;
+}
+
+cite {
+    font-style: normal;
+}
+
+/*------通用设置------*/
+.pr {
+    position: relative
+}
+
+.pa {
+    position: absolute
+}
+
+.fl {
+    float: left
+}
+
+.fr {
+    float: right
+}
+
+.clearfix {
+    zoom: 1
+}
+
+.clearfix:after {
+    content: '\20';
+    display: block;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+    clear: both
+}
+
+.none {
+    display: none
+}
+
+.ht {
+    overflow: hidden;
+    text-indent: -9999px;
+    text-decoration: none
+}
+
+.fb {
+    font-weight: bold
+}
+
+.fn {
+    font-weight: normal
+}
+
+.f12 {
+    font-size: 12px
+}
+
+.f16 {
+    font-size: 16px
+}
+
+.f22 {
+    font-size: 22px
+}
+
+.tc {
+    text-align: center
+}
+
+
+
+/*----素材---*/
+.spr {
+    background: url(../img/spr.png) no-repeat;
+}
+
+.logo1 {
+    width: 285px;
+    height: 64px;
+}
+
+.logo2 {
+    width: 70px;
+    height: 64px;
+    background-position: -285px 0;
+}
+
+.main-nav li:hover, .download_btn, .freshman_btn, .tiyan_btn, .item_title, .more_btn, .mask-play-ico, .icon_arrow, .icon_watch, .ico-play {
+    background: url(../img/index.png) no-repeat;
+    display: inline-block;
+}
+
+.download_btn {
+    width: 236px;
+    height: 128px;
+    background-position: 0 -219px;
+}
+
+.freshman_btn {
+    width: 236px;
+    height: 106px;
+    background-position: 0 -350px;
+}
+
+.tiyan_btn {
+    width: 236px;
+    height: 108px;
+    background-position: 0 -461px;
+}
+
+.strategy_center .item_title {
+    width: 127px;
+    height: 26px;
+    background-position: 0 -106px;
+}
+
+.skin_center .item_title {
+    width: 136px;
+    height: 25px;
+    background-position: 0 -144px;
+}
+
+.match_center .item_title {
+    width: 134px;
+    height: 24px;
+    background-position: 0 -184px;
+}
+
+.more_btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding-left: 22px;
+    background: url(//game.gtimg.cn/images/yxzj/web201706/images/comm/index.png) no-repeat -252px 4px;
+    color: #999;
+}
+
+.icon_arrow {
+    position: absolute;
+    top: 20px;
+    left: 42px;
+    width: 11px;
+    height: 6px;
+    background-position: -257px -28px;
+}
+
+.icon_watch {
+    width: 14px;
+    height: 14px;
+    background-position: -256px -43px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.arrow-ico {
+    display: inline-block;
+    width: 7px;
+    height: 6px;
+    margin: 10px 0 0 15px;
+    background-position: -348px -86px;
+}
+
+/*font-face*/
+@font-face {
+    font-family: 'light';
+    src: url('//game.gtimg.cn/images/yxzj/web201706/images/comm/light.eot');/* IE9 Compat Modes */
+    src: url('//game.gtimg.cn/images/yxzj/web201706/images/comm/light.eot?#iefix') format('embedded-opentype'),
+    url('//game.gtimg.cn/images/yxzj/web201706/images/comm/light.woff') format('woff'),
+    url('//game.gtimg.cn/images/yxzj/web201706/images/comm/light.ttf') format('truetype');
+}
+
+/*------private------*/
+body {
+    background: #fff;
+    font: 14px/1.5 "Microsoft YaHei", Tahoma, "simsun", sans-serif;
+    color: #323235;
+}
+
+.wrapper { /*background:url(//game.gtimg.cn/images/yxzj/web201605/top_banner/bg_wrapper2.jpg) no-repeat center top;*/
+    position: relative;
+}
+
+.kv-bg {
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 1100px;
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
+.kv-bg video {
+    width: 1920px;
+    height: 1100px;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    margin-left: -960px;
+}
+
+.logo {
+    left: 0;
+    top: 16px;
+    z-index: 100;
+    background: url(../img/logo.png) no-repeat center center;
+    width: 200px;
+    height: 54px;
+    text-indent: -999px;
+    overflow: hidden;
+}
+
+.kv_link {
+    position: absolute;
+    z-index: 2;
+    width: 240px;
+    height: 60px;
+    top: 475px;
+    left: 50%;
+    margin-left: -120px;
+    outline: none;
+    text-indent: -9999px;
+    overflow: hidden;
+    background: url(#);
+}
+
+/*----header----*/
+.header {
+    position: fixed;
+    left: 0;
+    /*top: 42px;*/
+    width: 100%;
+    height: 84px;
+    z-index: 99;
+    background: #000;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.header-inner {
+    width: 1200px;
+    height: 84px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.header-dialog {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 9999;
+}
+
+.sub-nav {
+    position: absolute;
+    visibility: hidden;
+    top: 83px;
+    left: 0;
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 30px;
+    background: #000;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 3;
+}
+
+.sub-nav-inner {
+    width: 970px;
+    height: 210px;
+    padding-left: 230px;
+    margin: 0 auto;
+    overflow: hidden;
+    zoom: 1;
+}
+
+.view-btn {
+    position: absolute;
+    z-index: 999;
+    width: 500px;
+    height: 186px;
+    top: -190px;
+    left: 10px;
+    outline: none;
+}
+
+.main {
+    position: relative;
+    min-height: 600px;
+}
+
+.main-nav {
+    width: 790px;
+    padding-left: 230px;
+}
+
+.main-nav li {
+    float: left;
+    width: 110px;
+    height: 84px;
+    text-align: center;
+}
+
+.main-nav li:hover {
+}
+
+.main-nav li:hover a {
+    color: #e4b653;
+}
+
+.main-nav li:hover em {
+    color: #91763f;
+}
+
+.main-nav a {
+    display: block;
+    width: 110px;
+    height: 64px;
+    padding: 20px 0 0;
+    color: #c9c9dd;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.main-nav em {
+    display: block;
+    padding-top: 5px;
+    -webkit-transform: scale(0.95);
+    -o-transform: scale(0.95);
+    font-size: 12px;
+    line-height: 16px;
+    color: #858792;
+}
+
+.login_pannel {
+    right: -88px;
+    top: 21px;
+    width: 252px;
+}
+
+.user_pic {
+    float: left;
+    margin-right: 7px;
+}
+
+.user_pic img {
+    border: 1px solid #d9ad50;
+    border-radius: 42px;
+}
+
+.per-infor {
+    float: left;
+    width: 200px;
+}
+
+.view-btn {
+    position: absolute;
+    z-index: 999;
+    width: 500px;
+    height: 186px;
+    top: -190px;
+    left: 334px;
+    outline: none;
+    overflow: hidden;
+    text-indent: -9999px;
+    text-decoration: none;
+}
+
+.down-nav {
+    float: left;
+    display: inline;
+    width: 100px;
+    padding: 2px 5px 0;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.down-nav a {
+    height: 30px;
+    line-height: 30px;
+    display: block;
+    padding: 0;
+    font-size: 14px;
+    color: #c9c9dd;
+}
+
+.down-nav a:hover {
+    color: #f3c258;
+    text-decoration: underline;
+}
+
+.down-nav .icon-guard, .down-nav .icon-health {
+    overflow: hidden;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+    background: url(//game.gtimg.cn/images/yxzj/web201706/images/comm/index.png) no-repeat -136px -5px;
+}
+
+.down-nav .icon-health {
+    background-position: -137px -36px;
+}
+
+.info-box {
+    position: relative;
+    margin: 401px auto 0;
+    width: 1200px;
+    height: 115px;
+    background: url(//game.gtimg.cn/images/yxzj/web201605/top_banner/bg_header.png) no-repeat;
+}
+
+.login-box {
+    width: 408px;
+    padding: 12px 10px;
+}
+
+.unlogin_info {
+    color: #858792;
+}
+
+.unlogin_info a {
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.user-name {
+    color: #858792;
+}
+
+.user-name em {
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.user-name a {
+    color: #8ea0b0;
+    margin-left: 10px;
+}
+
+.personal_link a {
+    color: #8ea0b0;
+}
+
+.userinfo-list {
+    display: none;
+}
+
+.userinfo-list li {
+    float: left;
+    display: inline;
+    width: 68px;
+    height: 46px;
+    margin-right: 2px;
+    background: #0b3b61;
+    border: 1px solid #0c3253;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.userinfo-list em {
+    display: block;
+    color: #b3bbc5;
+    margin-top: 3px;
+    height: 20px;
+    overflow: hidden;
+}
+
+.userinfo-list i {
+    color: #406380;
+    font-size: 12px;
+}
+
+.main {
+    padding-top: 540px;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.main_top {
+    width: 1200px;
+    height: 342px;
+    background: url(//game.gtimg.cn/images/yxzj/web201706/images/comm/rotate_bg.png) no-repeat left top;
+}
+
+.rotate {
+    width: 605px;
+    height: 342px;
+}
+
+.news_center {
+    width: 325px;
+    height: 342px;
+    overflow: hidden;
+    padding: 0 17px;
+}
+
+.download_pannel {
+    width: 236px;
+    height: 342px;
+}
+
+.download_pannel a {
+    display: block;
+}
+
+.tab-hd {
+    border-bottom: 1px solid #000;
+}
+
+.tab-hd li {
+    float: left;
+    width: 52px;
+    font-size: 14px;
+    text-align: center;
+    line-height: 45px;
+    height: 45px;
+    padding-bottom: 3px;
+}
+
+.tab-hd li a {
+    display: inline-block;
+    color: #b8b9c5;
+}
+
+.tab-hd li:hover {
+    padding: 0;
+    border-bottom: 3px solid #f3c258;
+}
+
+.tab-hd li:hover a, .tab-hd li.on a {
+    color: #f3c258;
+}
+
+.newsTab {
+    position: relative;
+    width: 325px;
+}
+
+.tab_more {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 52px;
+    display: block;
+    color: #b8b9c5;
+    text-align: center;
+    font-size: 14px;
+}
+
+.copyright_txt {
+    font-size: 10px;
+    text-align: center;
+    float: none;
+    height: 26px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    border-top: 2px solid #d4d4d4;
+}
+

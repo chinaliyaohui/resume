@@ -1,0 +1,168 @@
+/*--轮播图---*/
+.promo-list {
+    position: relative;
+    width: 3020px;
+    height: 298px;
+}
+
+.promo-item {
+    float: left;
+    width: 604px;
+    height: 298px;
+    background: #000;
+    overflow: hidden;
+}
+
+.promo-item a, .promo-item img {
+    display: block;
+    width: 604px;
+    height: 298px;
+}
+
+.rotate {
+    width: 604px;
+    height: 342px;
+    overflow: hidden;
+}
+
+.rotate li {
+    width: 604px;
+    height: 298px;
+    float: left;
+}
+
+.rotate li img {
+    display: block;
+    width: 604px;
+    height: 298px;
+    border-radius: 0;
+}
+
+.rotate .rbox {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 50;
+    width: 100%;
+}
+
+.rotate .rt {
+    float: left;
+    display: inline-block;
+    width: 120.8px;
+    height: 44px;
+    line-height: 44px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    cursor: pointer;
+    text-align: center;
+    color: #b1b2be;
+}
+
+.rotate .rn {
+    background: rgba(255, 255, 255, 0.15);
+    color: #f3c258;
+}
+
+.btn-box {
+    width: 208px;
+}
+
+.news-list0 {
+    display: none;
+}
+
+.dis {
+    display: block;
+}
+
+.news-list li {
+    margin-bottom: 9px;
+    overflow: hidden;
+}
+
+.news_center .news-list li {
+    margin-bottom: 11px;
+}
+
+.news_center .news-list .news-time {
+    color: #999;
+}
+
+.news-type {
+    display: none;
+    width: 37px;
+    height: 19px;
+    line-height: 19px;
+    margin-right: 12px;
+    background: #e3e3e3;
+    border-radius: 10px;
+    border: 2px solid #e3e3e3;
+    text-align: center;
+    color: #999999;
+    text-indent: 2px;
+}
+
+.news-txt {
+    width: 270px;
+    color: #b8b9c5;
+    font-size: 14px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.news-txt:hover {
+    text-decoration: underline;
+}
+
+.news-time {
+    font-size: 12px;
+    color: #b8b9c5;
+}
+
+.news-list .line-sp {
+    width: 294px;
+    height: 36px;
+    line-height: 36px;
+    padding: 0 15px;
+    margin-top: 18px;
+    text-align: center;
+    font-size: 28px;
+    color: #333333;
+    background: #414046;
+}
+
+.news-list .line-sp a {
+    color: #f3c258;
+    font-size: 18px;
+}
+
+.news-list .line-sp .news-type, .news-list .line-sp .news-time {
+    display: none;
+}
+
+.quick_entrance {
+    margin: 28px auto 34px;
+    letter-spacing: -0.35em;
+    margin-right: -15px;
+}
+
+.quick_entrance a {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    width: 291px;
+    height: 134px;
+    margin-right: 12px;
+}
+
+.quick_entrance img {
+    display: block;
+    width: 100%;
+}
+
+.quick_entrance a:nth-last-child(1) {
+    margin-right: 0;
+}
